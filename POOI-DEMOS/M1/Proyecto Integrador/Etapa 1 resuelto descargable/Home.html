@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech</title>
+    <style>
+        body{
+            background-color: #f0f0f0;;
+        }
+    </style>
+    <script src="./modelo.js"></script>
+    <script src="./navegacion.js"></script>
+    <script  src="./acciones.js" ></script>    
+    <script>
+
+        window.addEventListener("load", mostrarPantalla("login"));
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="text-2xl font-bold mb-4 text-center">
+        <h1>
+            Trabajo Practico Integrador
+        </h1>
+        <h2>
+            Introduccion a Objetos
+        </h2>
+    </header>
+
+    <hr />
+
+    <div class="py-3" id="root">
+
+    </div>
+
+    <div>
+        <button onclick="mostrarPantalla('login')">Login</button>
+        <button onclick="mostrarPantalla('cuenta')">Cuenta</button>
+        <button onclick="mostrarPantalla('transferencia')">Transferencia</button>
+        <button onclick="mostrarPantalla('movimientos')">Movimientos</button>
+        <button onclick="mostrarPantalla('ingreso-dinero')">Ingreso Dinero</button>
+        <button onclick="mostrarPantalla('registro')">registro</button>
+    </div>
+</body>
+
+</html>

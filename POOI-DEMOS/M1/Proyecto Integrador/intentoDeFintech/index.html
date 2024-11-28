@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="login-screen">
+        <h1>Login</h1>
+        <form onsubmit="login(event)">
+            <input type="email" id="login-email" placeholder="Email" required />
+            <input type="password" id="login-password" placeholder="Password" required />
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="message"></div>
+        <p><a href="#" onclick="showRegisterScreen()">Don't have an account? Register here.</a></p>
+    </div>
+
+    <div id="register-screen" style="display: none;">
+        <h1>Register</h1>
+        <form onsubmit="register(event)">
+            <input type="email" id="register-email" placeholder="Email" required />
+            <input type="password" id="register-password" placeholder="Password" required />
+            <input type="text" id="register-firstName" placeholder="First Name" required />
+            <input type="text" id="register-lastName" placeholder="Last Name" required />
+            <button type="submit">Register</button>
+        </form>
+        <div id="register-message" class="message"></div>
+        <p><a href="#" onclick="showLoginScreen()">Already have an account? Login here.</a></p>
+    </div>
+
+    <div id="app-screen" style="display: none;">
+        <header>
+            <h1>Fintech Management System</h1>
+            <button id="logout-button" onclick="logout()">Logout</button>
+        </header>
+        <main>
+            <section id="app"></section>
+            <section id="menu">
+                <button onclick="showClients()">Manage Clients</button>
+                <button onclick="showAccounts()">Manage Accounts</button>
+                <button onclick="showMovements()">View Transactions</button>
+            </section>
+        </main>
+    </div>
+    <script src="modules/Client.js"></script>
+    <script src="modules/Account.js"></script>
+    <script src="modules/Movement.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

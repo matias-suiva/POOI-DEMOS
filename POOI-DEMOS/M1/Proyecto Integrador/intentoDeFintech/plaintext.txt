@@ -1,0 +1,10 @@
+fintech-project/
+├── index.html         # Archivo principal con la interfaz
+├── styles.css         # Estilo visual del proyecto
+├── script.js          # Lógica principal del sistema
+├── modules/           # Módulos del sistema
+│   ├── Client.js      # Clase Cliente
+│   ├── Account.js     # Clase Cuenta
+│   ├── Movement.js    # Clase Movimiento
+├── assets/            # Carpeta para imágenes o íconos (opcional)
+└── README.md          # Documentación del proyecto
